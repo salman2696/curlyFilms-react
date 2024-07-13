@@ -4,11 +4,11 @@ function Header() {
     return(
         <nav>
         <div className="navbar">
-            <div class="logo">
+            <div className="logo">
                 <a href="#">The Curly Films</a>
             </div>
             <div className="menu-toggle" id="hamburger">
-                <i class="fas fa-bars"></i>
+                <i className="fas fa-bars"></i>
             </div>
             <ul className="list-item" id="menuList">
                 <li><a href="#team">Team</a></li>

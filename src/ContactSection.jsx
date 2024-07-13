@@ -20,15 +20,15 @@ function ContactSection(){
             <form action="#">
                 <div className="input-box">
                     <p>Name</p>
-                    <input class="input" type="text"/>
+                    <input className="input" type="text"/>
                 </div>
                 <div className="input-box">
                     <p>Email</p>
-                    <input class="input" type="email"/>
+                    <input className="input" type="email"/>
                 </div>
                 <div className="input-box">
                     <p>Message</p>
-                    <input class="input" type="text"/>
+                    <input className="input" type="text"/>
                 </div>
                 <div className="input-box">
                     <input type="checkbox"/>
