@@ -1,25 +1,33 @@
-import React from "react";
+import React, { useState, useRef } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 function Header() {
-    return(
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const navbar = useRef();
+
+    const showNavbar = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
+    return (
         <nav>
-        <div className="navbar">
-            <div className="logo">
-                <a href="#">The Curly Films</a>
+            <div className="navbar">
+                <div className="logo">
+                    <a href="#">The Curly Films</a>
+                </div>
+                <div className="menu-toggle" id="hamburger" onClick={showNavbar}>
+                    <FontAwesomeIcon icon={faBars} />
+                </div>
+                <ul className={`list-item ${isMenuOpen ? "active" : ""}`} id="menuList" ref={navbar}>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#">Price</a></li>
+                    <li><a href="#contactUs">Contact</a></li>
+                </ul>
             </div>
-            <div className="menu-toggle" id="hamburger">
-                <i className="fas fa-bars"></i>
-            </div>
-            <ul className="list-item" id="menuList">
-                <li><a href="#team">Team</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#">Price</a></li>
-                <li><a href="#contactUs">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    )
+        </nav>
+    );
 }
 
-
-export default Header
+export default Header;

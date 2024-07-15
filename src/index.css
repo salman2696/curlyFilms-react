@@ -249,7 +249,7 @@
   align-items: center;
   justify-content: center;
   background-color: #000000;
-  height: 30vh;
+  padding: 30px;
 }
 
 .footer .follow{
@@ -314,7 +314,23 @@
   }
 
   .contact-section{
-    padding: 50px 10px;
+    padding: 50px 30px;
+    background-color: #e7e7e7;
+  }
+
+  .contact-section .contact-container{
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .contact-section .form-container{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:600px) and (max-width: 950px){
+  .contact-section{
+    padding: 50px 30px;
     background-color: #e7e7e7;
   }
 

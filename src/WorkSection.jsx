@@ -12,9 +12,7 @@ function WorkSection() {
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea vel veniam laboriosam tempora. Ipsam sit ea
                         inventore aliquam aspernatur commodi totam, quae et, veritatis neque doloribus voluptatem molestiae quis
                         vitae.
-                        Ratione pariatur ex officiis dicta sunt cumque, inventore incidunt neque recusandae corrupti obcaecati,
-                        amet ut, repellendus modi. Ipsa consectetur recusandae debitis, reprehenderit quae, illum repellendus
-                        incidunt explicabo, accusantium pariatur tempora.</p>
+                        Ratione pariatur ex officiis dicta sunt cumque, inventore incidunt neque recusandae corrupti obcaecati,</p>
                 </div>
                 <a href="https://www.youtube.com/watch?v=E-spd1Fnlow&t=128s" className="work-container" target="_blank" rel="noopener noreferrer">
                     <img src="/Images/zarf.jpg" alt="Zarf After Movie" />
