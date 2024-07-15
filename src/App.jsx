@@ -13,7 +13,7 @@ function App() {
     <HeroSection/>
     <WorkSection/>
     <ContactSection/>
-    <Footer/>
+    <Footer/> 
 
     </>
   )
